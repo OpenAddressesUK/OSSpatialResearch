@@ -1,13 +1,13 @@
 # 
-# Open addresses ETL Common Library
-# Open addresses Extract Point From Point Collection Shapefile
+# Open addresses Spatial Research
+# OS Open Map ETL Script
 #
 #
 # Version       1.0 (Python) in progress
 # Author        John Murray
 # Licence       MIT
 #
-# Purpose       Extract points and attributes from shapefile
+# Purpose       Load OS Open Map into database
 #
 
 import shapefile
