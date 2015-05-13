@@ -55,7 +55,7 @@ Where:
     
 Example
 
-    python getAddrFromOS2.py EC2A4JE 100
+    python getAddrFromOS.py EC2A4JE 100
     
 Yields output:
 
