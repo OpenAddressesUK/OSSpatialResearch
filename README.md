@@ -52,6 +52,61 @@ Where:
 
     *postcode* is the postcode to be search without any spaces
     *maxdist* is the maximum distance from the postcode centroid to search for address components
+    
+Example
+
+    python getAddrFromOS2.py EC2A4JE 100
+    
+Yields output:
+
+        Street: Clifton Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 30.4
+        
+        Street: Holywell Row
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 30.4059204761
+        
+        Street: Worship Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 36.5766804691
+        
+        Street: Paul Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 58.6853074283
+        
+        Street: Bonhill Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 63.4154555294
+        
+        Street: Wilson Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 70.5543761931
+        
+        Street: Dysart Street
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 82.023204316
+        
+        Street: Finsbury Market
+        Settlement: 
+        Postcode: EC2A 4JE
+        County: Greater London
+        Distance: 88.1981859224
+        
 
 ## Licence
 This code is open source under the MIT license. See the [LICENSE.md](LICENSE.md) file for full details.
