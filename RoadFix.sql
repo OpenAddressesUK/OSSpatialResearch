@@ -1,5 +1,5 @@
 -- Create correction lookup for missing formsPart fields in OS OpenRoads
-CREATE TABLE `roadlink_fix2` 
+CREATE TABLE `roadlink_fix` 
 SELECT spa_roadlink.identifier,gaz_opennames.OS_ID 
 FROM gaz_opennames 
 INNER JOIN spa_roadlink ON gaz_opennames.NAME1 = spa_roadlink.name1 

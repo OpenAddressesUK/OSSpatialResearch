@@ -22,8 +22,6 @@ import os.path
 import fnmatch
 import os
 
-tol = 5                                 # Tolerance
-
 if len(sys.argv) > 2:
     print "Invalid arguments. Usage is 'python shapetest.py [directory]'"
     sys.exit()
