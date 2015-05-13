@@ -46,12 +46,12 @@ This will create a look up table from which the missing components in Open Roads
 
 To test the database, run the Python script getAddrFromOS.py:
 
-        python getAddrFromOS.py *postcode* *maxdist*
+    python getAddrFromOS.py *postcode* *maxdist*
         
-Where
+Where:
 
-        *postcode* is the postcode to be search without any spaces
-        *maxdist* is the maximum distance from the postcode centroid to search for address components
+    *postcode* is the postcode to be search without any spaces
+    *maxdist* is the maximum distance from the postcode centroid to search for address components
 
 ## Licence
 This code is open source under the MIT license. See the [LICENSE.md](LICENSE.md) file for full details.
