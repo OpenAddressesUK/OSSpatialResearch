@@ -32,12 +32,13 @@ cur = dbConn.cursor()
 
 query = "SELECT `name1`,`formOfWay`,`length`,`formsPart`,ST_DISTANCE(`GEOMETRY`,(SELECT `GEOMETRY`FROM `gaz_opennames` WHERE `OS_ID` = '"+postcode+"')) AS `Distance` FROM `spa_roadlink` WHERE `ID` IN (SELECT `ID` FROM `spa_roadlink` WHERE ST_INTERSECTS(`GEOMETRY`,(SELECT ST_BUFFER(`GEOMETRY`,"+str(buf_size)+") FROM `gaz_opennames` WHERE `OS_ID` = '"+postcode+"'))) ORDER BY `Distance`"
 
-print query 
-
 cur.execute(query)
 data = cur.fetchall()
 
 streets = []
+
+print "Postcode: "+postcode[0:-3]+" "+postcode[-3:]
+print
 
 for d in data:
     if d[3] != '':
@@ -48,7 +49,7 @@ for d in data:
                 if d1[0] not in streets:
                     print "Street: "+d1[0]
                     print "Settlement: "+d1[4]
-                    print "Postcode: "+postcode[0:-3]+" "+postcode[-3:]
+                    print "District: "+d1[5]
                     print "County: "+d1[6]
                     print "Distance: "+str(d[4])
                     print
