@@ -2,6 +2,16 @@ OSSpatialResearch
 =================
 This is the repository for [Open Addresses](https://openaddressesuk.org)' "Spatial Research" Python scripts, data files and SQL used during our evaluation of Ordnance Survey Open Map and Open Roads , part of the solution we deployed to ascertain their potential to improve the accuracy of our services.
 
+## System Requirements
+
+Recommended:
+
+    Min 2 core processor at 3Ghz (4 core recommended)
+    min 8GB RAM (16GB recommended)
+    60GB free disk space
+    Linux or Windows with Python 2.7
+    MySQL, MariaDB or compatable database with full spatial query support
+
 ## Dependencies
 
 The Python scripts require the external PyShp shapefile Python library. Consult the installation guide for your OS for instructions.
